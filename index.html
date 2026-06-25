@@ -472,28 +472,23 @@
             background: #c9a32f;
         }
 
-        .contact__map-placeholder {
-            background: #1a1a1a;
+        .contact__map {
             border-radius: 8px;
-            padding: 48px 24px;
-            text-align: center;
+            overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.05);
-            min-height: 220px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
         }
 
-        .contact__map-placeholder p {
-            color: #b0b0b0;
-            font-size: 0.95rem;
-        }
-
-        .contact__map-placeholder .map-icon {
-            font-size: 2.4rem;
-            margin-bottom: 12px;
+        .contact__map iframe {
             display: block;
+        }
+
+        .contact__map-label {
+            background: #1a1a1a;
+            color: #b0b0b0;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 10px 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         /* Instagram / Facebook link */
@@ -967,15 +962,23 @@
                     </a>
                 </div>
 
-                <!-- RIGHT: Map placeholders for both locations -->
+                <!-- RIGHT: Google Maps embeds for both locations -->
                 <div>
-                    <div class="contact__map-placeholder">
-                        <span class="map-icon" aria-hidden="true">📍</span>
-                        <p><strong>595 Colombo Street</strong><br />Christchurch Central</p>
+                    <div class="contact__map">
+                        <iframe title="Zak's Barbershop — 595 Colombo Street"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.716!2d172.6362!3d-43.532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDMxJzU1LjIiUyAxNzLCsDM4JzEwLjMiRQ!5e0!3m2!1sen!2snz!4v1!4m5!3m4!1s0x6d3d6b0c1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!8m2!3d-43.5319!4d172.6369"
+                            width="100%" height="220" style="border:0; border-radius:8px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <p class="contact__map-label">595 Colombo Street — Christchurch Central</p>
                     </div>
-                    <div class="contact__map-placeholder" style="margin-top:16px;">
-                        <span class="map-icon" aria-hidden="true">📍</span>
-                        <p><strong>2 Trafford Street</strong><br />Harewood, Christchurch</p>
+                    <div class="contact__map" style="margin-top:16px;">
+                        <iframe title="Zak's Barbershop — 2 Trafford Street"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.242!2d172.5685!3d-43.4896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDI5JzIyLjYiUyAxNzLCsDM0JzA2LjYiRQ!5e0!3m2!1sen!2snz!4v1!4m5!3m4!1s0x6d3d6b0c1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!8m2!3d-43.4896!4d172.5685"
+                            width="100%" height="220" style="border:0; border-radius:8px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <p class="contact__map-label">2 Trafford Street — Harewood, Christchurch</p>
                     </div>
                 </div>
 
